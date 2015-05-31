@@ -4,6 +4,7 @@ RUN echo 'http://mirror.yandex.ru/mirrors/alpine/edge/testing/' >> /etc/apk/repo
     apk --update add \
         erlang \
         erlang-crypto \
+        erlang-xmerl \
         erlang-sasl && \
     rm -rf /var/cache/apk/*
 
