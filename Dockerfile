@@ -5,7 +5,6 @@ RUN echo 'http://mirror.yandex.ru/mirrors/alpine/edge/testing/' >> /etc/apk/repo
         erlang \
         erlang-crypto \
         erlang-xmerl \
+        libstdc++ \
         erlang-sasl && \
     rm -rf /var/cache/apk/*
-
-ENTRYPOINT ["erl"]
